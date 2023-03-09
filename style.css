@@ -1,0 +1,116 @@
+/* ## Colors
+
+### Primary
+
+#### Text
+
+- Very dark desaturated blue: hsl(238, 29%, 16%)
+- Soft red: hsl(14, 88%, 65%)
+
+#### Gradient
+
+Background gradient:
+
+- Soft violet: hsl(273, 75%, 66%)
+- Soft blue: hsl(240, 73%, 65%)
+
+### Neutral
+
+#### Text
+
+- Very dark grayish blue: hsl(237, 12%, 33%)
+- Dark grayish blue: hsl(240, 6%, 50%)
+
+#### Dividers
+
+- Light grayish blue: hsl(240, 5%, 91%) */
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Kumbh Sans'; 
+}
+
+body {
+    font-size: 12px;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider {
+    border: 1px solid hsl(240, 5%, 91%)
+}
+
+#container {
+    background-color: white;
+    width: 900px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#graphic {
+    background-image: url(illustration-box-desktop.svg), url(illustration-woman-online-desktop.svg), url(bg-pattern-desktop.svg);
+    background-position: left -50% center, right center, right ;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    overflow: visible
+}
+
+#info {
+    width: 50%;
+    padding: 50px;
+}
+
+h1 {
+    padding-bottom: 20px;
+    color: hsl(237, 12%, 33%)
+}
+
+.accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    color: hsl(237, 12%, 33%)
+  }
+
+.accordion:hover {
+    color: hsl(14, 88%, 65%);
+    font-weight: 400
+  }
+  
+  .active, .accordion:hover {
+    background-color: white;
+    font-weight: 700;
+  }
+  
+  .panel {
+    padding: 10px 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    color: hsl(240, 6%, 50%)
+  }
+
+  svg {
+    padding-right: 20%
+  }
+
+  .active svg {
+    transform: scaleY(-1);
+  }
