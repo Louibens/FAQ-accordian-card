@@ -73,7 +73,7 @@ body {
   height: 450px;
   position: absolute;
   z-index: 3;
-  transform: translate(-20%, 40%);
+  transform: translate(-130px, 180px);
 }
 
 #info {
@@ -132,4 +132,68 @@ h1 {
 
   .active svg {
     transform: scaleY(-1);
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    h1 {
+    margin: 10px auto;
+    padding: 0
+    }
+
+    #container {
+      background-color: white;
+      width: 350px;
+      height: 500px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  #graphic {
+background-image: none;
+width: 350px;
+height: 80px;
+position: relative;
+}
+
+.pattern {
+  background-image: url(bg-pattern-mobile.svg);
+  background-position: center ;
+  background-repeat: no-repeat;
+  width: 350px;
+  height: 200px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.illustration {
+  background-image: url(illustration-woman-online-mobile.svg);
+  background-position: center ;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 350px;
+  transform: translate(20%, -55%);
+}
+
+.box { 
+  display: none;
+}
+
+#info {
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 80%
+ 
+}
+
+.accordion {
+   font-size: 14px;
+}
+
   }
