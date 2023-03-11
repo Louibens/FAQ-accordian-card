@@ -58,12 +58,21 @@ body {
 }
 
 #graphic {
-    background-image: url(illustration-box-desktop.svg), url(illustration-woman-online-desktop.svg), url(bg-pattern-desktop.svg);
-    background-position: left -50% center, right center, right ;
-    width: 50%;
-    height: 100%;
+    background-image: url(illustration-woman-online-desktop.svg), url(bg-pattern-desktop.svg);
+    background-position: right center, right ;
+    width: 450px;
+    height: 450px;
     background-repeat: no-repeat;
     overflow: visible
+}
+
+.box { 
+  background: url(illustration-box-desktop.svg) no-repeat;
+  width: 50%;
+  height: 450px;
+  position: absolute;
+  z-index: 3;
+  transform: translate(-15%, 40%);
 }
 
 #info {
